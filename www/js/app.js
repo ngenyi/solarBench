@@ -22,3 +22,22 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+.config(function($stateProvider, $urlRouterProvider){
+
+      $urlRouterProvider.otherwise('/login');
+
+      $stateProvider
+      .state('/login',{
+        url:'/login',
+        controller:'loginCtrl',
+        templateUrl:'templates/login.html'
+      })
+
+      .state('/register',{
+        url:'/register',
+        controller:'registerCtrl',
+        templateUrl:'templates/register.html'
+      })
+
+})

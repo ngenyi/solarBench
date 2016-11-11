@@ -1,1 +1,28 @@
-/* Empty. Add your own CSS if you like */
+ion-content {
+    background: url(../img/drawable-xxhdpi/solar_bench_bg_3.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}/* Empty. Add your own CSS if you like */
+
+ion-content #logo img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 36.5px;
+  margin-bottom: 10px;
+}
+
+ion-content #logo_name img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
