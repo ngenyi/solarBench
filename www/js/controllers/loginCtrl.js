@@ -1,14 +1,12 @@
 angular.module('starter')
-.controller('loginCtrl',['$scope','$log',function(sc , lg ){
+.controller('loginCtrl',['$scope','$log','loginFcty',function(sc , lg , loginFcty){
 
-  sc.login = function()
+  sc.login = function(user)
   {
-    // lg.log(this.username);
-    // lg.log(this.password);
+     lg.log(user);
+     lg.log("Login pending...");
 
-    lg.log("Login pending...");
-
-    //var promise =
+     var promise = loginFcty.loginUser(user);
   }
 
 }]);

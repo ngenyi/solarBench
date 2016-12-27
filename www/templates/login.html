@@ -1,24 +1,30 @@
 <ion-view title="Login">
-    <ion-content padding="'true'" class="has-header">
-        <form class="list" >
+    <ion-content padding="'false'" >
+        <form >
             <ion-list>
-                <label class="item item-input">
-                    <span class="input-label">Email</span>
 
+                <div id="logo">
+                  <img src="img/drawable-hdpi/solar_bench_logo_01.png">
+                </div>
+
+                <div class="spacer" style="height: 30px;"></div>
+
+                <label class="item item-input">
 					    <!-- here we create a user object and store email as its property  -->
-                    <input ng-model="user.email" type="email" placeholder="" >
+                    <input ng-model="user.email" type="email" placeholder="Email">
                 </label>
-                <label class="item item-input">
-                    <span class="input-label">Password</span>
 
+                <label class="item item-input">
 					    <!-- user object  -->
-                    <input ng-model="user.password" type="password" placeholder="">
+                    <input ng-model="user.password" type="password" placeholder="Password">
                 </label>
+
             </ion-list>
-            <div class="spacer" style="height: 40px;"></div>
+
+            <div class="spacer" style="height: 30px;"></div>
 
 			     <!-- login() function is called -->
-            <button  class="button button-stable button-block " ng-click="login()" >Log in</button>
+            <button  class="button button-stable button-block " ng-click="login(user)" >Log in</button>
 
 			      <!-- a link to register page -->
             <a href="#/register" class="button button-positive button-clear button-block ">Or create an account</a>
